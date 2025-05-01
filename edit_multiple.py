@@ -20,7 +20,9 @@ print("Generating image...")
 img = client.images.edit(
   model="gpt-image-1",
   image=[
-    open(sys.argv[1], "rb"),
+    open("latte.png", "rb"),
+    open("americano.png", "rb"),
+    open("icetea.png", "rb"),
   ],
   prompt=prompt,
   n=1,

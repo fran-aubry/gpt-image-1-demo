@@ -22,10 +22,11 @@ img = client.images.edit(
   image=[
     open(sys.argv[1], "rb"),
   ],
+  mask=open("mask.png", "rb"),
   prompt=prompt,
   n=1,
   quality="high",
-  size="1536x1024",
+  size="1024x1536",
 )
 
 # Save the image into a file named output.png

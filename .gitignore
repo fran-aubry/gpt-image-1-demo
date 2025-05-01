@@ -1,2 +1,6 @@
 .env
 *.png
+*.jpeg
+*.webp
+*.mp4
+*.jpg
